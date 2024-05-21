@@ -1,0 +1,293 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+/* Body Styles */
+body {
+  background: #171616;
+}
+
+/* Scrollbar Styles */
+body::-webkit-scrollbar-thumb {
+  background: #f2f2f2;
+  border-radius: 0.4rem;
+}
+
+body::-webkit-scrollbar {
+  background: #101010;
+  width: 0.4rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #101010;
+  box-shadow: 0 0.2rem 2rem #151515;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.home {
+  text-decoration: none;
+  color: white;
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  min-width: 11rem;
+}
+
+.logo svg {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+/* Navigation List Styles */
+.navList {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+
+/* Dropdown List Title Styles */
+.titleDesplegList {
+  font-weight: lighter;
+  font-size: 1rem;
+  transition: 0.2s;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.titleDesplegList:hover {
+  scale: 1.1;
+}
+
+/* Hover Styles for Dropdown List Title */
+.navList li:hover .titleDesplegList {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+/* Link Styles */
+.navList li a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.dropdownList {
+  position: relative;
+}
+
+.navList li:hover .contentSubList {
+  height: 28rem;
+}
+
+.contentSubList {
+  overflow: hidden;
+  min-width: 26rem;
+  height: 0rem;
+  transition: 0.8s;
+  position: absolute;
+  left: -25%;
+}
+
+/* Dropdown List Content Styles */
+.dropdownList .subList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.4rem;
+  background: #202020;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  position: absolute;
+  top: 1rem;
+  list-style: none;
+}
+
+.subList::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: #202020;
+  transform: rotate(45deg);
+  top: -0.4rem;
+  left: 3.6rem;
+  position: absolute;
+}
+
+.dropdownList .subList li {
+  font-size: 0.9rem;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  background: #151515;
+  transition: 0.2s;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.dropdownList .subList li:hover {
+  background-color: #3a3a3a;
+  scale: 1.04;
+}
+
+.boxLogin {
+  display: flex;
+  justify-content: center;
+  min-width: 11rem;
+}
+
+/* Login Button Styles */
+.boxLogin a {
+  text-align: center;
+  padding: 0.6rem 2.4rem;
+  font-size: 0.85rem;
+  border-radius: 0.8rem;
+  background: #202020;
+  color: #f2f2f2;
+  transition: 0.2s;
+  text-decoration: none;
+  width: 8rem;
+}
+
+.boxLogin a:hover {
+  cursor: pointer;
+  scale: 1.06;
+  border: solid 2px #f2f2f2;
+}
+
+.boxAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+}
+
+.boxAccount:hover {
+  background: #b03636;
+}
+
+.boxAccount img {
+  background: #f2f2f2;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Front Page */
+
+.frontPage {
+  display: flex;
+  text-align: center;
+  background: linear-gradient(0deg, #101010, #303030);
+  padding: 4rem 6rem 6rem 6rem;
+  gap: 4.8rem;
+}
+
+.develop {
+  flex-direction: column;
+  display: flex;
+  text-align: justify;
+  gap: 1rem;
+}
+
+.divDate{
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.frontP {
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.frontImg {
+  width: 18rem;
+  background-size: cover;
+  padding: 1.2rem;
+}
+
+.sinopsis {
+  color: #f2f2f2;
+  line-height: 2rem;
+}
+
+.infSecond {
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 2rem;
+}
+
+.infSecond h2{
+  font-size: 0.9rem;
+}
+
+.trailerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background: #101010;
+}
+
+.trailerVideo {
+  width: 100%;
+}
+
+.boxVideo {
+  display: flex;
+  width: 100%;
+  height: 48rem;
+  padding: 4rem 8rem;
+}
+
+.aside {
+  display: flex;
+  border-radius: 0.4rem 0 0 0.4rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: #202020;
+}
+
+.aside h1 {
+  padding: 2rem 2rem 0 2rem;
+  color: #f2f2f2;
+}
+
+.aside img {
+  width: 14rem;
+  padding: 2rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.aside img:hover {
+  scale: 1.04;
+}
+
+
+.iframeTrailer{
+  width: 100%;
+  border: none;
+}

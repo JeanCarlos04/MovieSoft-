@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MovieSoft for to edit">
+    <link
+      rel="shortcut icon"
+      href="../img/Logo_MoviSoft.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/edit.css" />
+    <script
+      src="https://kit.fontawesome.com/c7c2ced7ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>MovieSoft</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <div class="logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.0"
+              viewBox="0 0 500.000000 500.000000"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <g
+                transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
+                fill="#F2F2F2"
+                stroke="none"
+              >
+                <path
+                  d="M2854 4447 c-12 -6 -234 -210 -495 -452 -876 -814 -1454 -1349 -1536 -1425 -95 -86 -111 -115 -91 -156 26 -55 1 -54 856 -54 435 0 792 -3 792 -6 0 -5 -203 -976 -301 -1439 -90 -426 -91 -431 -59 -460 39 -35 83 -24 153 42 35 32 144 132 243 223 98 91 549 506 1001 922 452 417 824 766 828 777 3 11 3 31 -1 45 -14 58 24 56 -856 56 -536 0 -808 3 -808 10 0 9 51 256 260 1250 22 102 57 270 80 374 22 103 40 203 40 221 0 59 -59 100 -106 72z m-129 -464 c-19 -87 -72 -342 -120 -568 -47 -225 -97 -462 -110 -525 -14 -63 -36 -169 -50 -235 -13 -66 -25 -123 -25 -127 0 -5 -317 -8 -705 -8 -388 0 -705 3 -704 8 0 4 152 147 337 318 295 272 960 888 1287 1191 60 57 113 103 116 103 4 0 -8 -71 -26 -157z m1199 -1661 c-52 -48 -552 -509 -1173 -1082 -485 -447 -539 -496 -545 -489 -1 2 32 171 75 374 43 204 101 478 129 610 52 249 90 429 117 553 l15 72 712 0 711 -1 -41 -37z"
+                />
+              </g>
+            </svg>
+            <a class="home" href="../index.html"
+              ><h1><span>M</span>ovie<span>S</span>oft</h1></a
+            >
+          </div>
+          <div>
+            <ul class="navList">
+              <li class="titleDesplegList">
+                <a type="button" href="../index.html">
+                  <i class="fa-solid fa-house"></i>
+                  Home</a
+                >
+              </li>
+              <li class="dropdownList">
+                <div class="titleDesplegList">
+                  <i class="fa-solid fa-film"></i>
+                  Movies
+                </div>
+                <div class="contentSubList">
+                  <ul class="subList">
+                    <li>New movies</li>
+                    <li>Popular movies</li>
+                    <li>The best movies</li>
+                    <li>Upcoming movies</li>
+                    <li>Anime</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dropdownList">
+                <div class="titleDesplegList">
+                  <i class="fa-solid fa-video"></i>
+                  Genre
+                </div>
+                <div class="contentSubList">
+                  <ul class="subList">
+                    <li>Action</li>
+                    <li>Animation</li>
+                    <li>Crime</li>
+                    <li>Drama</li>
+                    <li>Fancy</li>
+                    <li>Terror</li>
+                    <li>Mystety</li>
+                    <li>Science fiction</li>
+                    <li>Suspense</li>
+                    <li>Adventure</li>
+                    <li>Comedy</li>
+                    <li>Family</li>
+                    <li>Romance</li>
+                    <li>War</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="account" class="boxLogin"></div>
+        </nav>
+      </header>
+
+      <section class="container">
+        <div class="settings">
+          <h1>Settings</h1>
+          <div class="boxEditMovie">
+            <div class="editMovie">
+              <h2>Pre-view</h2>
+              <article id="preView" class="preView"></article>
+            </div>
+
+            <div class="editMovie">
+              <h2>Trailer</h2>
+              <article id="trailer" class="trailer"></article>
+            </div>
+          </div>
+          <button id="btnDelete" class="btnDelete">Delete</button>
+        </div>
+
+        <div class="edit">
+          <h2>Edit</h2>
+          <form id="form" class="formEdit">
+            <div>
+              <label for="title">Title:</label>
+              <input type="text" id="title" required />
+            </div>
+            <div>
+              <label for="year">Year:</label>
+              <input type="number" min="1990" max="2030" id="year" />
+            </div>
+            <div>
+              <label for="director">Director:</label>
+              <input type="text" id="director" />
+            </div>
+            <div>
+              <label for="actors">Actores:</label>
+              <input type="text" id="actors" />
+            </div>
+            <div>
+              <label for="resena">Reseña:</label>
+              <input type="text" id="resena" required />
+            </div>
+            <div>
+              <label for="urlImg">Url Image:</label>
+              <input type="url" id="urlImg" required />
+            </div>
+            <div>
+              <label for="url">Url Trailer:</label>
+              <input type="url" id="url" required />
+            </div>
+            <input type="submit" id="btnSave" class="btnSave" value="Save" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../js/edit.js"></script>
+  </body>
+</html>

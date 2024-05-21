@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1c1c1c;
+  position: relative;
+}
+
+.cap {
+  width: calc(100vw - 30rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #101010;
+  background-image: url("../img/backgroundLogin.webp");
+  background-size: cover;
+  background-position: center;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  transition: 0.8s;
+  position: absolute;
+  left: 0%;
+  z-index: 1;
+}
+
+.cap svg {
+  width: 26rem;
+  height: 26rem;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 4rem;
+  font-style: italic;
+  text-decoration: dashed;
+  color: #f2f2f2;
+  margin-bottom: 1em;
+  cursor: pointer;
+  animation: loopWhite 2s infinite linear;
+}
+
+@keyframes loopWhite {
+  0% {
+    text-shadow: 0 0 0 #f2f2f2;
+  }
+  50% {
+    text-shadow: 0 0 8px #f2f2f2;
+  }
+  100% {
+    text-shadow: 0 0 0 #f2f2f2;
+  }
+}
+
+h1 span {
+  color: #cf3e3e;
+  animation: loopRed 2s infinite linear;
+}
+
+@keyframes loopRed {
+  0% {
+    text-shadow: 0 0 0 #cf3e3e;
+  }
+  50% {
+    text-shadow: 0 0 8px #cf3e3e;
+  }
+  100% {
+    text-shadow: 0 0 0 #cf3e3e;
+  }
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  height: 100%;
+  min-width: 30rem;
+  color: #f2f2f2;
+  position: relative;
+}
+
+form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+h2 span {
+  color: #cf3e3e;
+}
+
+h3 {
+  color: #aeaeae;
+}
+
+input {
+  border-radius: 0.2rem;
+  height: 2.5rem;
+  width: 18.75rem;
+  padding: 1rem;
+  background-color: #101010;
+  border-style: none;
+  border: solid 1px #404040;
+  outline: none;
+  transition: 0.2s;
+  color: #f2f2f2;
+}
+
+input::placeholder {
+  color: rgb(167, 167, 170);
+  font-size: 0.8rem;
+}
+
+.btnSend {
+  margin-top: 1rem;
+  padding: 0.4rem 0;
+  border-radius: 0.2rem;
+  background-color: #bd3b3b;
+  border: 1px solid #f2f2f2;
+  color: #f2f2f2;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btnSend:hover {
+  scale: 1.02;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  cursor: pointer;
+  position: absolute;
+  color: #bd3b3b;
+  transition: 0.2s;
+  text-decoration: none;
+  bottom: 4rem;
+}
+
+.back:hover {
+  scale: 1.1;
+}
+
+.back i {
+  font-size: 1.6rem;
+}
+
+h4 {
+  color: #f2f2f2;
+  font-size: 0.75rem;
+}
+
+h4 span {
+  cursor: pointer;
+  transition: 0.2s;
+  color: #f34949;
+}
+
+h4 span:hover {
+  text-decoration: underline;
+}
+
+.invalid {
+  border: 1px solid #bd3b3b;
+}

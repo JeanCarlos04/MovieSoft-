@@ -1,0 +1,342 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+/* Body Styles */
+body {
+  background: rgb(30, 30, 30);
+}
+
+/* Scrollbar Styles */
+body::-webkit-scrollbar-thumb {
+  background: #f2f2f2;
+  border-radius: 0.4rem;
+}
+
+body::-webkit-scrollbar {
+  background: #101010;
+  width: 0.4rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #101010;
+  box-shadow: 0 0.2rem 2rem #151515;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  min-width: 11rem;
+}
+
+.logo svg {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+/* span */
+h1 span {
+  color: #cf3e3e;
+}
+
+.home {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigation List Styles */
+.navList {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+
+/* Dropdown List Title Styles */
+.titleDesplegList {
+  font-weight: lighter;
+  font-size: 1rem;
+  transition: 0.2s;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.titleDesplegList:hover {
+  scale: 1.1;
+}
+
+/* Hover Styles for Dropdown List Title */
+.navList li:hover .titleDesplegList {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+/* Link Styles */
+.navList li a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.dropdownList {
+  position: relative;
+}
+
+.navList li:hover .contentSubList {
+  height: 28rem;
+}
+
+.contentSubList {
+  overflow: hidden;
+  min-width: 26rem;
+  height: 0rem;
+  transition: 0.8s;
+  position: absolute;
+  left: -25%;
+}
+
+/* Dropdown List Content Styles */
+.dropdownList .subList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.4rem;
+  background: #202020;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  position: absolute;
+  top: 1rem;
+  list-style: none;
+}
+
+.subList::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: #202020;
+  transform: rotate(45deg);
+  top: -0.4rem;
+  left: 3.6rem;
+  position: absolute;
+}
+
+.dropdownList .subList li {
+  font-size: 0.9rem;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  background: #151515;
+  transition: 0.2s;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.dropdownList .subList li:hover {
+  background-color: #3a3a3a;
+  scale: 1.04;
+}
+
+.boxBtnLogin {
+  display: flex;
+  justify-content: center;
+  min-width: 11rem;
+}
+
+/* Login Button Styles */
+.boxBtnLogin a {
+  text-align: center;
+  padding: 0.6rem 2.4rem;
+  font-size: 0.85rem;
+  border-radius: 0.8rem;
+  background: #202020;
+  color: #f2f2f2;
+  transition: 0.2s;
+  text-decoration: none;
+  width: 8rem;
+}
+
+.boxBtnLogin a:hover {
+  cursor: pointer;
+  scale: 1.06;
+  border: solid 2px #f2f2f2;
+}
+
+/* -------------------------- */
+
+/* Main */
+.container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+/* edit movie */
+.boxEditMovie {
+  display: flex;
+  background-color: #303030;
+  width: 100%;
+  gap: 2rem;
+  height: 100%;
+  padding: 1.32rem;
+  border-radius: 0.2rem;
+}
+
+.boxEditMovie .editMovie {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  flex-direction: column;
+}
+
+.editMovie:nth-child(1) {
+  width: 24rem;
+}
+
+/* class pre-view  */
+.preView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.4rem;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #505050;
+  border-radius: 0.4rem;
+}
+
+.imgPreView {
+  border-radius: 0.4rem;
+  width: 100%;
+  border: none;
+}
+
+.trailer {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #505050;
+  border-radius: 0.4rem;
+}
+
+.trailer .video {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+/* settings */
+.settings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 2rem 4rem;
+}
+
+.settings h1 {
+  font-size: 2.4rem;
+}
+
+/* editor */
+.edit {
+  display: flex;
+  flex-direction: column;
+  background-color: #303030;
+  gap: 1rem;
+  padding: 2rem 2.8rem;
+}
+
+.edit h2 {
+  font-size: 2.2rem;
+}
+
+/* Data */
+
+.formEdit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.formEdit div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.formEdit input {
+  border: none;
+  width: 16rem;
+  outline: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.2rem;
+}
+
+/* btn Delete */
+.btnDelete {
+  width: 8rem;
+  margin: 1rem 0;
+  padding: 0.6rem 1.32rem;
+  font-weight: 600;
+  color: white;
+  background-color: #f05a57;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+/* btnSave */
+.btnSave {
+  width: 8rem !important;
+  margin: 1.6rem auto 0 auto;
+  padding: 0.6rem 1.2rem !important;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  background-color: #5db464;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btnSave:hover {
+  scale: 1.04;
+}
+
+.boxAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+}
+
+.boxAccount:hover {
+  background: #b03636;
+}
+
+.boxAccount img {
+  background: #f2f2f2;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
